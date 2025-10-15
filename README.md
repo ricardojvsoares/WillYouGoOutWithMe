@@ -32,8 +32,11 @@ WillYouGoOutWithMe
 │  │  ├─ index.ts
 │  │  └─ texts.json
 │  ├─ routes
-│  │  ├─ +layout.svelte
-│  │  └─ +page.svelte
+│  │  ├─ +server.ts
+│  │  └─ [lang]
+│  │     ├─ +layout.svelte
+│  │     ├─ +layout.ts
+│  │     └─ +page.svelte
 │  └─ style
 │     ├─ styles.css
 │     └─ _variables.css
