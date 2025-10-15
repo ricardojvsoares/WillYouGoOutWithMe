@@ -71,7 +71,6 @@ WillYouGoOutWithMe
 npm run build
 ```
 
-The built files will be in the `dist/` directory.
 
 ## Deploy to Vercel
 
@@ -119,7 +118,7 @@ Edit `src/styles/_variables.css` to customize:
 
 ### Content
 
-Edit `src/App.svelte` to customize:
+Edit `src/App.svelte` and `lib/texts.json` to customize:
 
 - The main question text
 - Button labels
@@ -131,7 +130,7 @@ Edit `src/App.svelte` to customize:
 - **Svelte 5** - Reactive UI framework
 - **Vite** - Build tool and dev server
 - **CSS Custom Properties** - For theming and variables
-- **Vanilla CSS** - No CSS frameworks, pure custom styles
+- **Tailwind CSS** -CSS frameworks
 
 ## Browser Support
 
