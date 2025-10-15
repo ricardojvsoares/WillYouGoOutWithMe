@@ -1,38 +1,144 @@
-# sv
+# Date Invitation Website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+An interactive and playful website to ask someone out on a date. The "No" button runs away when you try to click it, making it impossible to decline!
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Beautiful gradient backgrounds
+- Evasive "No" button that moves when hovered
+- "Yes" button grows larger with each "No" attempt
+- Confetti celebration animation on acceptance
+- Fully responsive design
+- Smooth animations and transitions
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Project Structure
 
-# create a new project in my-app
-npx sv create my-app
+```
+WillYouGoOutWithMe
+├─ .npmrc
+├─ .prettierignore
+├─ .prettierrc
+├─ eslint.config.js
+├─ LICENSE
+├─ package-lock.json
+├─ package.json
+├─ README.md
+├─ src
+│  ├─ app.d.ts
+│  ├─ app.html
+│  ├─ lib
+│  │  ├─ assets
+│  │  │  └─ favicon.svg
+│  │  ├─ index.ts
+│  │  └─ texts.json
+│  ├─ routes
+│  │  ├─ +layout.svelte
+│  │  └─ +page.svelte
+│  └─ style
+│     ├─ styles.css
+│     └─ _variables.css
+├─ static
+│  └─ robots.txt
+├─ svelte.config.js
+├─ tailwind.config.js
+├─ tsconfig.json
+└─ vite.config.ts
+
 ```
 
-## Developing
+## Local Development
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. Install dependencies:
 
-```sh
-npm run dev
+   ```bash
+   npm install
+   ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+2. Start the development server:
 
-## Building
+   ```bash
+   npm run dev
+   ```
 
-To create a production version of your app:
+3. Open your browser to `http://localhost:5173`
 
-```sh
+## Build for Production
+
+```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+The built files will be in the `dist/` directory.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Deploy to Vercel
+
+### Option 1: Using Vercel CLI
+
+1. Install Vercel CLI:
+
+   ```bash
+   npm install -g vercel
+   ```
+
+2. Deploy:
+   ```bash
+   vercel
+   ```
+
+### Option 2: Using Vercel Dashboard
+
+1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
+2. Go to [vercel.com](https://vercel.com)
+3. Click "New Project"
+4. Import your repository
+5. Vercel will automatically detect the Svelte project and configure it
+6. Click "Deploy"
+
+### Option 3: Deploy from Local Directory
+
+1. Go to [vercel.com](https://vercel.com)
+2. Install Vercel CLI: `npm install -g vercel`
+3. Run `vercel` in the project directory
+4. Follow the prompts
+
+## Customization
+
+### Colors and Styles
+
+Edit `src/styles/_variables.css` to customize:
+
+- Colors
+- Spacing
+- Border radius
+- Shadows
+- Transitions
+- Font sizes
+
+### Content
+
+Edit `src/App.svelte` to customize:
+
+- The main question text
+- Button labels
+- Success message
+- "No" button text variations
+
+## Technologies Used
+
+- **Svelte 5** - Reactive UI framework
+- **Vite** - Build tool and dev server
+- **CSS Custom Properties** - For theming and variables
+- **Vanilla CSS** - No CSS frameworks, pure custom styles
+
+## Browser Support
+
+Works on all modern browsers:
+
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+- Mobile browsers
+
+## License
+
+Feel free to use this project for your own romantic endeavors!
